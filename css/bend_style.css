@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+.page_wrapper{
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    width: 100%;
+    max-width: 1050px;
+}
+
+/*********HEADER*******************/
+.header{
+    position: relative;
+}
+.header__image{
+    max-width: 100%;
+}
+
+.header__burgerWrapper{
+    /*max-width: 43px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    top: 5%;
+    right: 0;
+    left: 86%;*/
+
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    top: 5%;
+    right: 50px;
+}
+.header__burgerMenu{
+    /*background-color: #000000;
+    max-width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 74%;
+    opacity: 0.7;*/
+    max-width: 400px;
+    width: 190px;
+    text-align: center;
+    position: absolute;
+    top: 33px;
+    right: 0;
+}
+.header__burgerMenu ul{
+    padding: 0;
+    margin: 0;
+}
+.header__burgerMenu ul li {
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid #b57961;
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.header__burgerMenu ul li:hover{
+    opacity: 1;
+}
+
+
+.hide{
+    display: none;
+}
+
+/*******end of HEADER*************/
+
+/**************ABOUT SECTION********************/
+
+.about{
+    padding: 18px 0 0 0;
+}
+
+.about__content{
+    margin-top: 72px;
+}
+
+.about__content p{
+    font-size: 18px;
+    color: #666666;
+    line-height: 150%;
+}
+
+.about__content h1,h2{
+    font-size: 28px;
+    color: #666666;
+}
+/**********end of ABOUT SECTION*****************/
+
+/************heading formating for video, gallery and contact section************/
+.heading--big{  
+    font-size: 53px;
+    margin: 0 0 79px 0;
+    color: #333333;
+}
+/************end of heading formating*************/
+
+
+/************GALLERY SECTION**********************/
+.gallery{
+    margin: 100px 0 0 0;
+}
+
+.gallery__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    -ms-grid-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-row-gap: 37px;
+    grid-column-gap: 47px;
+}
+
+.gallery__container img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/************end of GALLERY SECTION**************/
+
+/************VIDEO SECTION**********************/
+.video{
+    margin: 100px 0 0 0;
+}
+
+.video__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    -ms-grid--columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-row-gap: 37px;
+    grid-column-gap: 47px;
+}
+
+.video__container iframe{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**************REPERTOAR SECTION************/
+.repertoar{
+    margin: 100px 0 0 0;
+}
+
+#repertoar__menu{
+    color: #666666;
+    font-size: 18px;
+}
+.repertoar__button{
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+.repertoar__content{
+    column-count: 3;
+    column-gap: 100px;
+    display: none;
+    line-height: 150%;
+}
+
+.repertoar__content li{
+    padding: 5px;
+}
+/************** end of REPERTOAR SECTION*********/
+
+/****************KONTAKT SECTION*****************/
+.kontakt{
+    margin: 100px 0 0 0;
+}
+
+.kontakt__info__holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt__info__holder span{
+    font-size: 18px;
+    color: #666666;
+}
+
+.kontakt__socialmedia{
+    display: flex;
+    flex-direction: row;
+    max-width: 316px;
+    margin: 70px 0 350px 0;
+}
+
+.kontakt__socialmedia a{
+    display: block;
+    padding: 0 40px 0 0;
+}
+
+.kontakt__socialmedia a:last-child{
+    padding: 0;
+}
+
+.kontakt__socialmedia a img{
+    width: 100%
+}
+/*************** end of CONTACT SECTION**********/
+
+/*****************FOOTER*********************/
+.footer{
+    padding: 45px 15px 45px 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+    background-color: #000000;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: #666666;
+}
+/**************end of FOOTER*****************/
+
+/*************MOBILE/TABLET RESPONSIVE**********/
+/***********************************************/
+
+@media(max-width: 890px){
+    .about__content{
+        margin-top: 30px;
+    }
+
+    .video{
+        margin: 50px 0 0 0;
+    }
+
+    .repertoar{
+        margin: 50px 0 0 0;
+    }
+
+    .repertoar__content{
+        column-count: 2;
+    }
+
+    .gallery{
+        margin: 50px 0 0 0;
+    }
+
+    .kontakt{
+        margin: 50px 0 0 0;
+    }
+
+    .kontakt__socialmedia{
+        margin: 20px 0 70px 0;
+    }
+    
+    .kontakt__socialmedia a img{
+        width: 70%;
+    }
+
+    .video__grid{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .gallery__grid{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .heading--big{
+        margin: 0 0 35px 0;
+        font-size: 43px;
+    }
+
+    
+}
+
+@media(max-width: 680px){
+    
+.header__burgerMenu ul li{
+    padding: 7px;
+}
+
+.repertoar__content{
+    column-count: 1;
+}
+}
