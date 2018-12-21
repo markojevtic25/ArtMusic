@@ -284,6 +284,18 @@ body{
 }
 
 @media(max-width: 680px){
+    .header__burgerWrapper{
+        right: 10px;
+    }
+
+    .header__burger{
+        max-width: 70%;
+    }
+
+    .header__burgerMenu{
+        top: 25px;
+        right: 15px;
+    }
     
 .header__burgerMenu ul li{
     padding: 7px;
