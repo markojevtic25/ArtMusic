@@ -22,6 +22,28 @@ body{
     max-width: 100%;
 }
 
+.header__logo{
+    position: absolute;
+    top: 4%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.header__logo__image{
+    max-width: 180px;
+}
+
+.header__logo__image img{
+    max-width: 100%;
+}
+
+.header__logo__text img{
+    max-width: 95%;
+}
+
 .header__burgerWrapper{
     /*max-width: 43px;
     position: absolute;
@@ -284,6 +306,11 @@ body{
 }
 
 @media(max-width: 680px){
+    .header__logo{
+        max-width: 250px;
+        margin-left: -140px;
+    }
+
     .header__burgerWrapper{
         right: 10px;
     }
@@ -297,11 +324,24 @@ body{
         right: 15px;
     }
     
-.header__burgerMenu ul li{
+    .header__burgerMenu ul li{
     padding: 7px;
-}
+    }
 
-.repertoar__content{
+    .repertoar__content{
     column-count: 1;
-}
-}
+    }
+    }
+    
+@media(max-width: 494px){
+    .gallery__grid{
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-auto-rows: 100px;
+        grid-column-gap: 10px;
+    }
+
+    .header__logo{
+        margin-left: -100px;
+        max-width: 170px;
+    }
+   }
